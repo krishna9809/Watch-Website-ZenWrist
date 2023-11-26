@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3fe7d890af.js" crossorigin="anonymous"></script>
+    <title>ZenWrist</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">ZenWrist</a>
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a  href="blog.html" >Blog</a></li>
+        <li><a href="about.html">About</a></li>
+            <li><a style=" color: #007bff;" href="contact.html">Contact</a></li>
+            <li class="cta-button"><a href="#">Shop Now</a></li>
+          </ul>
+         
+        </div>
+      </nav>
+
+      <section class="hero contact-hero">
+        <h1>Contact-Us</h1>
+  <p>
+    "Connect with us for inquiries, collaborations, and assistance."</p>
+      </section>
+
+
+    
+<div class="contact-form">
+    <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+  
+        <button type="submit">Submit</button>
+      </form>
+
+</div>
+
+
+
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+  
+    <!-- FAQ Container -->
+    <div class="faq-container">
+  
+      <!-- FAQ Question 1 -->
+      <div class="faq-question" onclick="toggleAnswer('answer1', 'toggleIcon1')">
+        <h3>How do I place an order?</h3>
+        <div class="faq-answer" id="answer1">
+          <p>To place an order, simply visit our online store, browse our collection, and add your desired items to the cart. Follow the checkout process to complete your purchase.</p>
+        </div>
+        <span class="toggle-icon" id="toggleIcon1">&#10006;</span>
+      </div>
+  
+      <!-- FAQ Question 2 -->
+      <div class="faq-question" onclick="toggleAnswer('answer2', 'toggleIcon2')">
+        <h3>What payment methods do you accept?</h3>
+        
+        <div class="faq-answer" id="answer2">
+          <p>We accept various payment methods, including credit/debit cards and online payment platforms. You can view the available options during the checkout process.</p>
+        </div>
+        <span class="toggle-icon" id="toggleIcon2">&#10006;</span>
+      </div>
+  
+      <!-- FAQ Question 3 -->
+      <div class="faq-question" onclick="toggleAnswer('answer3', 'toggleIcon3')">
+        <h3>How can I track my order?</h3>
+        <div class="faq-answer" id="answer3">
+          <p>Once your order is shipped, you will receive a confirmation email with tracking information. You can use this information to track the status and location of your package.</p>
+        </div>
+        <span class="toggle-icon" id="toggleIcon3">&#10006;</span>
+      </div>
+  
+      <!-- Add more FAQ questions and answers as needed -->
+  
+    </div>
+  
+  </section>
+
+  <div class="contact-details-section">
+    <h2>Contact Details</h2>
+    <h3>If you have any questions or inquiries, feel free to reach out to us using the contact form or through the following channels:</h3>
+
+    <ul>
+      <li><i class="fas fa-envelope"></i> Email: info@yourwebsite.com</li>
+      <li><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</li>
+      <li><i class="fas fa-map-marker-alt"></i> Address: 123 Main Street, City, Country</li>
+    </ul>
+  </div>
+        <!-- Footer Section -->
+  <footer class="footer">
+    <p>
+      <a href="home.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+      <!-- Add more pages as needed -->
+    </p>
+  
+    <!-- Follow Us Section -->
+    <div class="footer-social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <!-- Add more social media icons as needed -->
+    </div>
+  
+    <p>&copy; 2023 ZenWrist. All rights reserved.</p>
+  </footer>
+  
+  
+  
+
+
+
+  <script>
+    function toggleAnswer(answerId, iconId) {
+      var answer = document.getElementById(answerId);
+      var icon = document.getElementById(iconId);
+  
+      if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+        icon.classList.remove('open');
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        icon.classList.add('open');
+      }
+    }
+
+    function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('show');
+  }
+
+
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3fe7d890af.js" crossorigin="anonymous"></script>
+    <title>ZenWrist</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">ZenWrist</a>
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a  href="blog.html" >Blog</a></li>
+        <li><a style=" color: #007bff;" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="cta-button"><a href="#">Shop Now</a></li>
+          </ul>
+         
+        </div>
+      </nav>
+
+      <section class="hero about-hero">
+        <h1>Know-Us</h1>
+  <p>
+    "Crafting timeless elegance through precision and passion in watches."</p>
+      </section>
+
+      <div class="main-content-about">
+        <!-- Content for the "About Us" page goes here -->
+        <div class="about-section about-main">
+          <div class="about-text">
+            <h1>Welcome to ZenWrist</h1>
+            <p class="subtext">Crafting Timeless Elegance in Every Tick</p>
+    
+            <p>At ZenWrist, we embrace the artistry of watchmaking, transforming each timepiece into a masterpiece. Our commitment to precision, passion for craftsmanship, and dedication to timeless design define the essence of who we are.</p>
+    
+            <p>Discover a curated collection of mechanical watches that blend tradition with innovation. Each watch tells a unique story, a narrative woven with precision gears, exquisite detailing, and a touch of contemporary elegance.</p>
+    
+            <p>Join us on this journey as we redefine the concept of timekeeping. Whether you're a seasoned horology enthusiast or exploring the world of watches for the first time, our collection caters to every style, occasion, and moment.</p>
+          </div>
+          <div class="about-image">
+            <img src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="About Us Image">
+          </div>
+          
+        </div>
+       
+      </div>
+
+      <section class="our-team-section">
+        <h2>Our Team</h2>
+      
+        <!-- Team Member 1 -->
+        <div class="team">
+        <div class="team-member">
+          <img src="https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member 1">
+          <h3>John Doe</h3>
+          <p>Co-Founder</p>
+        </div>
+      
+        <!-- Team Member 2 -->
+        <div class="team-member">
+          <img src="https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member 2">
+          <h3>Jane Smith</h3>
+          <p>Lead Designer</p>
+        </div>
+      
+        <!-- Team Member 3 -->
+        <div class="team-member">
+          <img src="https://images.pexels.com/photos/7063778/pexels-photo-7063778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member 3">
+          <h3>Robert Johnson</h3>
+          <p>Head of Engineering</p>
+        </div>
+      
+        <!-- Team Member 4 -->
+        <div class="team-member">
+          <img src="https://images.pexels.com/photos/7783511/pexels-photo-7783511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member 4">
+          <h3>Mary Williams</h3>
+          <p>Marketing Specialist</p>
+        </div>
+        </div>
+      
+      
+      </section>
+      
+    
+
+  
+        <!-- Footer Section -->
+  <footer class="footer">
+    <p>
+      <a href="home.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+      <!-- Add more pages as needed -->
+    </p>
+  
+    <!-- Follow Us Section -->
+    <div class="footer-social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <!-- Add more social media icons as needed -->
+    </div>
+  
+    <p>&copy; 2023 ZenWrist. All rights reserved.</p>
+  </footer>
+  
+  
+  
+
+
+
+  <script>
+    function toggleAnswer(answerId, iconId) {
+      var answer = document.getElementById(answerId);
+      var icon = document.getElementById(iconId);
+  
+      if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+        icon.classList.remove('open');
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        icon.classList.add('open');
+      }
+    }
+
+    function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('show');
+  }
+
+
+  </script>
+
+
+</body>
+</html>

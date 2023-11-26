@@ -902,6 +902,30 @@ body{
     .cta-button {
         display: none;
       }
+
+      .about-main {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+    }
+    .about-text {
+      max-width: 100%;
+      font-size: 20px;
+      text-align: right;
+  }
+  .about-image img {
+    width: 160%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+   
+}
+
+.about-image{
+  margin-right: 70px;
+}
   }
 
   @media (max-width: 477px){
